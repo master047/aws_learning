@@ -4,7 +4,6 @@ import sys
 import pygame
 from pygame.locals import QUIT
 
-
 def list_sns(region, creds, sns_topics=[]):
     sns = boto_session('sns', creds, region)
     response = sns.list_topics()
@@ -26,7 +25,7 @@ def main():
     while True:
         SURFACE.fill((255, 255, 255))
 
-        for event at pygame.event.get():
+        for event in pygame.event.get():
             if event.type == QUIT:
                 pygame.quit()
                 sys.exit()
