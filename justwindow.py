@@ -14,9 +14,9 @@ def main():
         SURFACE.fill((255, 255, 255))
 
         for event in pygame.event.get():
-            if event.type == QUIT:
-                pygame.quit()
-                sys.exit()
+            #if event.type == QUIT:
+            #    pygame.quit()
+            #    sys.exit()
 
         pygame.display.update()
 
